@@ -1,0 +1,45 @@
+{
+  "name": "turkey-tycoon-contract",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "hardhat compile --force",
+    "rpc": "hardhat node",
+    "test": "hardhat jest",
+    "deploy-contract": "pnpm exec hardhat run scripts/deploy-earn.ts",
+    "flatten": "pnpm exec hardhat flatten"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
+    "@nomicfoundation/hardhat-verify": "^2.0.6",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/jest": "^29.5.12",
+    "@uniswap/v3-core": "^1.0.1",
+    "@uniswap/v3-periphery": "^1.4.4",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.12.1",
+    "hardhat": "^2.22.3",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-gas-reporter": "^2.1.1",
+    "jest": "^29.7.0",
+    "solidity-coverage": "^0.8.12",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "ethers": "^6.12.1",
+    "@openzeppelin/contracts": "^5.0.2",
+    "typescript": "^5.4.5",
+    "hardhat": "^2.22.3",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverage": false,
+    "coverageDirectory": "./coverage"
+  }
+}
